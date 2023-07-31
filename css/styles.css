@@ -440,15 +440,14 @@ ol {
 }
 .service-link:hover,
 .service-link:focus {
-    transform: translateY(0%);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-/* .service-link:focus p {
+.service-link:hover .service-img-text,
+.service-link:focus .service-img-text {
     transform: translateY(0%);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
+}
+
 .service-img {
     position: relative;
     overflow: hidden;
@@ -633,11 +632,11 @@ ol {
     background-color: #404bbf;
     border: none;
 }
+.modal-btn:hover .btn-icon,
+.modal-btn:focus .btn-icon {
+    fill: var(--white);
+}
 .btn-icon {
     transition: fill;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn-icon:hover,
-.btn-icon:focus {
-    fill: var(--white);
 }
