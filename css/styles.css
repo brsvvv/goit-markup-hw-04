@@ -638,5 +638,5 @@ ol {
 }
 .btn-icon:hover,
 .btn-icon:focus {
-    fill: #ffffff;
+    fill: var(--white);
 }
