@@ -102,13 +102,20 @@ ol {
 .nav-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .nav-item {
+    color: var(--navyblue, #2e2f42);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
     position: relative;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+    display: inline-block;
 }
 
 .nav-item::after {
@@ -119,6 +126,19 @@ ol {
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--ocean, #404bbf);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
 }
 
 .adress-header {
@@ -171,6 +191,8 @@ ol {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-title {
     color: #fff;
@@ -543,8 +565,7 @@ ol {
 .logo-container {
     margin-right: 120px;
 }
-.social-media-container {
-}
+
 .sm-text {
     font-weight: 500;
     font-size: 16px;
