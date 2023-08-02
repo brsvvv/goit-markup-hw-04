@@ -118,7 +118,7 @@ ol {
     display: inline-block;
 }
 
-.nav-item::after {
+.nav-item-after::after {
     content: '';
     position: absolute;
     left: 0;
